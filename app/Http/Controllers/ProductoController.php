@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Producto;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
