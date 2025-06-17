@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Producto;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Log;
 
@@ -64,7 +65,7 @@ class ProductoController extends Controller
             // ✅ Log de éxito
             Log::channel('personal')->info('Producto registrado', [
                 'producto_id' => $producto->id,
-                'usuario_id' => auth()->id(),
+                'usuario_id' => Auth::id(),
                 'codigo_barras' => $producto->codigo_barras,
                 'nombre' => $producto->nombre,
             ]);
@@ -75,7 +76,7 @@ class ProductoController extends Controller
             // ❌ Log de error
             Log::channel('personal')->error('Error al registrar producto', [
                 'error' => $e->getMessage(),
-                'usuario_id' => auth()->id(),
+                'usuario_id' => Auth::id(),
                 'request_data' => $request->all(),
             ]);
 
