@@ -69,38 +69,11 @@
                      </svg>
                      <span class="font-medium">Ventas</span>
                  </a>
-                 <a href="{{ route('ventas.index') }}"
-                     class=" sinsub flex items-center space-x-3 px-3 py-2.5 rounded-lg {{ request()->routeIs('users.*') ? 'bg-blue-50 text-blue-700 border border-blue-100' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' }} transition-colors duration-200">
-                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path fill-rule="evenodd" clip-rule="evenodd"
-                             d="M6 1C4.34314 1 3 2.34315 3 4V20C3 21.6569 4.34315 23 6 23H19C20.6569 23 22 21.6569 22 20V10C22 9.73478 21.8946 9.48043 21.7071 9.29289L13.7071 1.29292C13.6114 1.19722 13.4983 1.1229 13.3753 1.07308C13.2572 1.02527 13.1299 1 13 1H6ZM12 3H6C5.44771 3 5 3.44771 5 4V20C5 20.5523 5.44772 21 6 21H19C19.5523 21 20 20.5523 20 20V11H13C12.4477 11 12 10.5523 12 10V3ZM18.5858 9.00003L14 4.41424V9.00003H18.5858Z"
-                             fill="black" />
-                     </svg>
-                     <span class="font-medium">Impresiones</span>
-                 </a>
+         
 
 
                  <!-- Reportes -->
-                 <a href=""
-                     class=" sinsub flex items-center space-x-3 px-3 py-2.5 rounded-lg {{ request()->routeIs('reports.*') ? 'bg-blue-50 text-blue-700 border border-blue-100' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' }} transition-colors duration-200">
-                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path
-                             d="M13 21C13 21.5523 13.4477 22 14 22C14.5523 22 15 21.5523 15 21V3C15 2.44772 14.5523 2 14 2C13.4477 2 13 2.44772 13 3V21Z"
-                             fill="black" />
-                         <path
-                             d="M5 21C5 21.5523 5.44772 22 6 22C6.55228 22 7 21.5523 7 21V11C7 10.4477 6.55228 10 6 10C5.44772 10 5 10.4477 5 11V21Z"
-                             fill="black" />
-                         <path
-                             d="M10 22C9.44772 22 9 21.5523 9 21V13C9 12.4477 9.44772 12 10 12C10.5523 12 11 12.4477 11 13V21C11 21.5523 10.5523 22 10 22Z"
-                             fill="black" />
-                         <path
-                             d="M17 21C17 21.5523 17.4477 22 18 22C18.5523 22 19 21.5523 19 21V7C19 6.44772 18.5523 6 18 6C17.4477 6 17 6.44772 17 7V21Z"
-                             fill="black" />
-                     </svg>
-                     <span class="font-medium">Reportes</span>
-                 </a>
+                
              </div>
              <div class="border-t border-gray-100 my-6"></div>
              <a href="{{ route('logs') }}"
