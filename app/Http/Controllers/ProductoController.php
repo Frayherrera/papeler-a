@@ -140,7 +140,7 @@ class ProductoController extends Controller
             $producto->delete();
             Log::channel('personal')->info('Producto eliminado', [
                 'producto_id' => $producto->id,
-                'usuario_id' => auth()->id(),
+                'usuario_id' => Auth::id(),
                 'codigo_barras' => $producto->codigo_barras,
                 'nombre' => $producto->nombre,
             ]);
